@@ -1,22 +1,385 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Red String Gaming</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="./css/CSSAgence_web.css">
-        <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
-        <script src="./bootstrap/js/jquery-1.9.1.min.js"></script>
+<html lang="fr">
 
-    </head>
-    <body>
- 
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <script src="./js/JSAgence_web.js"></script>
-        <script src="./bootstrap/js/bootstrap.min.js"></script>
-        <script src="./bootstrap/js/popper.min.js"></script>
+  <title>Fil_Rouge</title>
+  <link rel="stylesheet" href="./css/bootstrap.css" />
+  <link rel="stylesheet" href="./css/animate.min.css">
+  <link rel="stylesheet" href="./css/fil_rouge.css" />
+</head>
 
-    </body>
+<body>
+  <!--navbar-->
+  <nav>
+    <ul>
+      <div class="logo-2">
+        <img class="logo" src="" style="height: 60px;">
+      </div>
+      <div class="logonav">
+        <div>
+          <label class="switch">
+            <input id="darkThm" onchange="changeLight(this.checked);" type="checkbox">
+            <span class="slider round"></span>
+          </label>
+        </div>
+        <center>
+          <img class="logo" src="./img/RSG_LOGO_ORANGE.png" style="height: 50px; width: 15%;">
+        </center>
+      </div>
+
+      <div class="R">
+        <li class="active"><a class="color animate__animated animate__zoomInLeft" href="#acceuil">Accueil</a>
+        </li>
+        <li class=""><a class="animate__animated animate__zoomInLeft" href="#produits">Produits</a></li>
+        <li class=""><a class="animate__animated animate__zoomInLeft" href="#services">Services</a>
+        </li>
+        <li class=""><a class="animate__animated animate__zoomInRight" href="#contacts">Contacts</a></li>
+      </div>
+    </ul>
+
+    <div class="burger">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+  </nav>
+
+  <div class="pageNav"></div>
+
+  <div id="acceuil">
+    <center>
+      <div id="slider">
+        <figure>
+          <img src="./img/1acc.jpg" alt />
+          <img src="./img/2acc.jpg" alt />
+          <img src="./img/3acc.jpg" alt />
+          <img src="./img/4acc.jpg" alt />
+          <img src="./img/1acc.jpg" alt />
+        </figure>
+      </div>
+    </center>
+  </div>
+
+  <div id="produits">
+
+    <div class="titre1">
+      <h1>Nos Produits</h1>
+    </div>
+
+    <center>
+      <div class="row">
+        <div class="col-md-4">
+          <figure class="snip1585"><img src="./img/1_RSG_Souris.png" alt="1" />
+            <figcaption>
+              <h3>
+                Souris gaming
+                <span>
+                  RSG/RAZER
+                </span>
+              </h3>
+            </figcaption>
+            <a href="#"></a>
+          </figure>
+        </div>
+        <div class="col-md-4">
+          <figure class="snip1585"><img src="./img/2_RSG_Tour.png" alt="2" />
+            <figcaption>
+              <h3>
+                Tour Gaming
+                <span>
+                  RSG/CORSAIR
+                </span>
+              </h3>
+            </figcaption>
+            <a href="#"></a>
+          </figure>
+        </div>
+        <div class="col-md-4">
+          <figure class="snip1585"><img src="./img/3_RSG_Clavier.png" alt="3" />
+            <figcaption>
+              <h3>
+                Clavier Gaming
+                <span>
+                  RSG/RAZER/MSI
+                </span>
+              </h3>
+            </figcaption>
+            <a href="#"></a>
+          </figure>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <figure class="snip1585"><img src="./img/7_RSG_Fauteuil_gaming.png" alt="4" />
+            <figcaption>
+              <h3>
+                CHAISE GAMING
+                <span>
+                  RSG/CORSAIR
+                </span>
+              </h3>
+            </figcaption>
+            <a href="#"></a>
+          </figure>
+        </div>
+        <div class="col-md-4">
+          <figure class="snip1585"><img src="./img/5_RSG_Casque_gaming.png" alt="5" />
+            <figcaption>
+              <h3>
+                CASAQUE GAMING
+                <span>
+                  RSG/RAZER
+                </span>
+              </h3>
+            </figcaption>
+            <a href="#"></a>
+          </figure>
+        </div>
+        <div class="col-md-4">
+          <figure class="snip1585"><img src="./img/RSG_Tee-Shirt.png" alt="sample109" />
+            <figcaption>
+              <h3>
+                Tee-Shirt
+                <span>
+                  RSG
+                </span>
+              </h3>
+            </figcaption>
+            <a href="#"></a>
+          </figure>
+        </div>
+    </center>
+  </div>
+
+  <!-- services -->
+
+  <div id="services">
+
+    <div>
+      <h1>Nos Services</h1>
+    </div>
+
+
+    <center>
+      <div class="row">
+        <div class="col-md-4">
+          <figure class="snip1487">
+            <img src="./img/S1.jpg" height="250px" alt="sample79" />
+            <figcaption>
+              <h3>Concevoir</h3>
+              <p>Montage de vos matériel informatiques,...</p>
+            </figcaption><i class="ion-plus-round"></i>
+            <a href="#"></a>
+          </figure>
+        </div>
+        <div class="col-md-4">
+          <figure class="snip1487">
+            <img src="./img/S2.jpg" height="250px" alt="sample79" />
+            <figcaption>
+              <h3>Réparation</h3>
+              <p>Réparation de de tout appareils informatiques ,...</p>
+            </figcaption><i class="ion-plus-round"></i>
+            <a href="#"></a>
+          </figure>
+        </div>
+        <div class="col-md-4">
+          <figure class="snip1487">
+            <img src="./img/S3.jpg" height="250px" alt="sample79" />
+            <figcaption>
+              <h3>Expertise</h3>
+              <p>Conseils de nos expert pour vous permettre la meilleure des qualités informatiques,...</p>
+            </figcaption><i class="ion-plus-round"></i>
+            <a href="#"></a>
+          </figure>
+        </div>
+      </div>
+  </div>
+  </center>
+  </div>
+
+  <div id="contacts">
+    <!-- contact -->
+
+    <div class="row" style="justify-content: center;">
+      <div class="col-md-10">
+
+        <div class="row" style="justify-content: center;">
+
+          <!-- gauche -->
+          <div class="col-md-5 contact">
+
+            <h1 class="titre_1">
+              Contactez-nous
+            </h1>
+
+            <h2 class="mt-3">
+              Par téléphone
+            </h2>
+
+            <h4>
+              au 39 51*
+            </h4>
+
+            <p>
+              <strong style="text-decoration: underline;">Horraires:</strong>
+              <br>
+              De 8h30 à 16h30 du lundi au jeudi.
+              <br>
+              De 8h30 à 16h00 le vendredi.
+              <br>
+              De 08h30 à 12h00 le samedi.
+            </p>
+
+            <h2 class="mt-3">
+              Rejoignez-nous
+            </h2>
+
+            <div type="button">
+              <i class="btnF fab fa-facebook m-3" style="color: white;"></i>
+              <i class="btnG fab fa-google m-3" style="color: white;"></i>
+            </div>
+
+          </div>
+          <!-- gauche -->
+
+
+          <!-- droite -->
+          <div class="col-md-5 contact">
+
+            <h1 class="titre_2">
+              Envoyer-nous un message
+            </h1>
+
+            <div class="mt-3">
+              <label for="nom" class="label"><strong>Nom</strong>(obligatoire)</label><br>
+              <input type="text" name="nom" id=" " required size="50">
+            </div>
+
+            <div class="mt-3">
+              <label for="email" class="label"><strong>Email</strong>(obligatoire)</label><br>
+              <input type="text" name="email" id="" required size="50">
+            </div>
+
+            <div class="mt-3">
+              <label for="mess" class="label"><strong>Message</strong></label><br>
+              <textarea id="story" name="mess" rows="4" cols="53"></textarea>
+            </div>
+
+
+
+          </div>
+          <!-- droite -->
+
+        </div>
+
+      </div>
+    </div>
+
+    <!-- contact -->
+
+
+    <!-- footer -->
+    <div class="row" style="justify-content: center;">
+      <div class="col-md-10 foot">
+
+        <div>
+          <h2 class="partenaires_titre" style="color: black;" align="center">Nos partenaires</h2>
+        </div>
+
+        <div class="row" style="justify-content: center;">
+          <div class="col-md-12">
+
+            <div class="row">
+              <div class="col-md-4" align="center">
+                <img src="./img/Razer-Logo-2016-present.png" alt="razer_logo" width="90" height="auto">
+              </div>
+
+              <div class="col-md-4" align="center">
+                <img src="./img/corsair-logo-1-1.png" alt="corsair_logo" width="90" height="auto">
+              </div>
+
+              <div class="col-md-4" align="center">
+                <img src="./img/MSI-Logo.png" alt="msi_logo" width="90" height="auto">
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12">
+
+            <div class="row mt-2" style="justify-content: center;">
+
+              <div class="col-md-5" align="center">
+                <a href="" style="color: black;">Information légales</a>
+              </div>
+              <div class="col-md-5" align="center">
+                <a href="" style="color: black;">Politique de confidentialité</a>
+              </div>
+
+            </div>
+
+            <div class="row mt-2" style="justify-content: center;">
+              <div class="col-md-12" align="center">
+                <span>
+                  Copyright © 2021 RSG Inc. All rights reserved
+                </span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- footer -->
+  </div>
+
+  <!-- java -->
+  <script src="./js/jquery-3.5.1.js"></script>
+  <script src="./js/fil_rouge.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+
+      var D = localStorage.getItem("color");
+      if (D !== null) {
+        $(".logonav").addClass("darka");
+        $("nav").addClass("darkNav");
+        $("a").addClass("darka");
+      }
+
+    });
+  </script>
+
+  <script type="text/javascript">
+    $(document).on("click", "ul li", function () {
+      $(this).addClass("active").siblings().removeClass("active")
+    })
+  </script>
+  <script type="text/javascript">
+    $(document).on("click", "a", function () {
+      $(this).addClass("color").siblings().removeClass("color")
+    })
+  </script>
+
+  <script type="text/javascript">
+    window.addEventListener("scroll", function () {
+      var header = document.querySelector("nav");
+      header.classList.toggle("sticky", window.scrollY > 650);
+    })
+  </script>
+  <script type="text/javascript">
+    window.addEventListener("scroll", function () {
+      var header = document.querySelector(".logonav");
+      header.classList.toggle("P", window.scrollY > 650);
+    })
+  </script>
+</body>
+
 </html>

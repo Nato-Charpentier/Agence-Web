@@ -1,0 +1,586 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+.row {
+    width: 100%;
+}
+/*navBar*/
+nav {
+    background-color: aliceblue;
+    font-size: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    list-style-type: none;
+    font-weight: bold;
+    margin: 0;
+    padding: 25px 50px;
+    transition: 450ms;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+
+ul li {
+    display: inline-block;
+}
+
+.R {
+    float: right;
+}
+
+nav ul li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.logonav {
+    position: absolute;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+}
+
+.pageNav {
+    background: linear-gradient(150deg, rgb(31, 29, 29), rgb(0, 0, 0));
+    height: 200px;
+}
+
+#acceuil {
+    background: linear-gradient(250deg, rgb(0, 0, 0), rgb(31, 29, 29));
+    min-height: 90vh;
+    width: 100%;
+    padding: 50px;
+}
+
+/* slider */
+div#slider {
+    max-width: 1000px;
+    overflow: hidden;
+    border-radius: 9px;
+}
+
+div#slider figure {
+    z-index: 1;
+    position: relative; 
+    width: 500%;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    animation: 20s slidy infinite;
+    transition: 450ms;
+}
+
+div#slider figure img {
+    width: 20%;
+    height: 10%;
+}
+
+@keyframes slidy {
+    0% { left: 0%; }
+    20% { left: 0%; }
+    25% { left: -100%; }
+    45% { left: -100%; }
+    50% { left: -200%; }
+    70% { left: -200%; }
+    75% { left: -300%; }
+    95% { left: -300%; }
+    100% { left: -400%; }
+}
+
+/*javaNav*/
+.darkNav {
+    background-color: black;
+    color: rgb(190, 114, 0);
+}
+
+.darka {
+    color: rgb(190, 114, 0);
+}
+
+/*javaBody*/
+.dark {
+    background-color: #112F41;
+    color: #ffffff;
+}
+
+.dark button {
+    background: #144098;
+    color: #fff;
+}
+
+.darkAcc {
+    background: linear-gradient(150deg, black,);
+    height: 100vh;
+}
+
+.sticky {
+    padding: 2px;
+    transition: 450ms;
+    background: linear-gradient(rgb(0, 0, 0), transparent 150%);
+    box-shadow: 0 1px 3px #111111;
+}
+
+@media screen and (max-width: 1350px) {
+    .logonav {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    color: #222121;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    position: absolute;
+    padding-left: 150px;
+    padding-top: 10px;
+    }
+
+    a {
+    font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    nav {
+    padding: 5px;
+    }
+
+    .logonav {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    color: #222121;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    position: absolute;
+    padding-left: 120px;
+    padding-top: 10px;
+    }
+
+    a {
+    font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 1095px) {
+    .logonav {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    color: #222121;
+    text-transform: uppercase;
+    letter-spacing: 9px;
+    position: absolute;
+    padding-left: 90px;
+    padding-top: 10px;
+    }
+
+    a {
+    font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    nav {
+    padding: 0;
+    }
+
+    .logonav {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    color: #222121;
+    text-transform: uppercase;
+    position: absolute;
+    padding-top: 10px;
+    }
+
+    a {
+    font-size: 9px;
+    }
+}
+
+@media screen and (max-width: 1010px) {
+    body {
+    overflow-x: hidden;
+    }
+
+    nav {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    justify-content: space-evenly;
+    position: fixed;
+    right: 0px;
+    height: 100vh;
+    width: 50%;
+    background: linear-gradient(
+        250deg,
+        rgba(29, 29, 29, 0.664),
+        rgb(76, 76, 77),
+        transparent 150%
+    );
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+    transition: 450ms;
+    border-radius: 0;
+    }
+
+    ul li {
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    }
+
+    .burger {
+    position: fixed;
+    display: block;
+    }
+
+    a {
+    font-size: 25px;
+    }
+
+    .logonav {
+    display: none;
+    }
+
+    .logo-2 {
+    overflow: visible;
+    position: relative;
+    top: 0;
+    }
+}
+
+
+/* produit */
+
+#produits {
+    background-image: url(../img/fredrick-tendong-HVYepJYeHdQ-unsplash.jpg);
+    position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+.snip1585 {
+    color: #fff;
+    display: inline-block;
+    font-size: 25px;
+    max-width: 500px;
+    min-width: 300px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+.snip1585 {
+    box-sizing: border-box;
+    transition: all 0.45s ease;
+}
+
+.snip1585:before,
+.snip1585:after {
+    background-color: rgba(46, 52, 64,  0.5);
+    border-top: 60px solid rgba(46, 52, 64, 0.5);
+    border-bottom: 60px solid rgba(46, 52, 64, 0.5);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content: '';
+    transition: all 0.5s ease;
+    z-index: 1;
+    opacity: 0;
+}
+
+.snip1585:before {
+    transform: scaleY(2);
+}
+
+.snip1585:after {
+    transform: scaleY(2);
+}
+
+.snip1585 img {
+    max-width: 100%;
+}
+
+.snip1585 figcaption {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1.1em;
+    opacity: 0;
+    z-index: 2;
+    transition-delay: 0s;
+}
+
+.snip1585 h3 {
+    font-size: 1em;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.snip1585 h3 span {
+    display: block;
+    font-weight: 700;
+}
+
+.snip1585 a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
+}
+
+.snip1585:hover > img,
+.snip1585.hover > img {
+    opacity: 0.7s;
+}
+
+.snip1585:hover:before,
+.snip1585.hover:before,
+.snip1585:hover:after,
+.snip1585.hover:after {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.snip1585:hover figcaption,
+.snip1585.hover figcaption {
+    opacity: 1;
+    transition-delay: 0.1s;
+}
+
+/* services */
+#services {
+    padding: 20px;
+    background: linear-gradient(250deg, rgb(0, 0, 0), rgb(31, 29, 29));
+    min-height: 50vh;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+.snip1487 {
+  font-family: 'Lato', Arial, sans-serif;
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+  min-width: 230px;
+  max-width: 315px;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  background-color: #000000;
+  line-height: 1.5em;
+}
+.snip1487 *,
+.snip1487 *:before,
+.snip1487 *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.25s linear;
+  transition: all 0.25s linear;
+}
+.snip1487 img {
+  width: calc(120%);
+  backface-visibility: hidden;
+  vertical-align: top;
+}
+.snip1487 figcaption {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  -webkit-transform: translateY(-25%);
+  transform: translateY(-25%);
+  padding: 5px 40px;
+  opacity: 0;
+}
+.snip1487 h3 {
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.snip1487 p {
+  font-weight: 400;
+  margin: 0;
+  font-size: 0.9em;
+}
+.snip1487 i {
+  position: absolute;
+  color: #fff;
+  font-size: 34.375px;
+  line-height: 55px;
+  width: 55px;
+  bottom: 0;
+  right: 0;
+  background-color: #c0392b;
+  -webkit-transform: translateX(55px);
+  transform: translateX(55px);
+}
+.snip1487 a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.snip1487:hover img,
+.snip1487.hover img {
+  zoom: 1;
+  filter: alpha(opacity=30);
+  -webkit-opacity: 0.3;
+  opacity: 0.3;
+  -webkit-transform: translateX(-40px);
+  transform: translateX(-40px);
+}
+.snip1487:hover figcaption,
+.snip1487.hover figcaption {
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  opacity: 1;
+}
+.snip1487:hover i,
+.snip1487.hover i {
+  transform: translateX(0);
+}
+
+/* contact */
+#contacts {
+    padding-top: 29px;
+    background: linear-gradient(150deg, rgb(49, 46, 46), rgb(0, 0, 0));
+    max-height: 100vh;
+}
+
+
+h1,h2,h4{
+    color: white;
+}
+/* contact */
+
+
+/* gauche */
+.titre_1{
+    font-weight: bold;
+}
+
+p{
+    color: white;
+}
+/* gauche */
+
+/* droite */
+.titre_2{
+    font-weight: bold;
+}
+
+.label{
+    color: white;
+}
+/* droite */
+
+
+/* footer */
+.foot{
+    background: linear-gradient(rgb(94, 94, 94), rgb(146, 146, 146));
+}
+
+.partenaires_titre{
+    color: black;
+    text-decoration: underline;
+}
+/* footer */
+
+#lightSlider
+{
+    float: right;
+}
+ 
+.switch
+{
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+ 
+.switch input
+{
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+ 
+.slider
+{
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+ 
+.slider:before
+{
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+ 
+input:checked + .slider
+{
+    background-color: #2196F3;
+}
+ 
+input:focus + .slider
+{
+    box-shadow: 0 0 1px #2196F3;
+}
+ 
+input:checked + .slider:before
+{
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+ 
+/* Rounded sliders */
+.slider.round
+{
+    border-radius: 34px;
+}
+ 
+.slider.round:before
+{
+    border-radius: 50%;
+}
